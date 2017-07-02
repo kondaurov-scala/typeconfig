@@ -1,13 +1,14 @@
-package com.github.kondaurovdev.typeconfig
+package com.github.kondaurovdev.typeconfig.helper
 
-import com.github.kondaurovdev.typeconfig.Implicits._
+import com.github.kondaurovdev.typeconfig.Helper
+import com.github.kondaurovdev.typeconfig.Helper.Implicits._
 import com.typesafe.config.ConfigFactory
 import play.api.libs.json._
 
-object ConfigHelper {
+trait iConfigHelper {
 
   def load(): Either[JsValue, ConfigWrapper] = {
-    JsonHelper.tryBlock({
+    Helper.Try.tryBlock({
       ConfigFactory.load()
     }, "Can't load app config")
   }
@@ -17,3 +18,5 @@ object ConfigHelper {
   }
 
 }
+
+class ConfigHelper extends iConfigHelper

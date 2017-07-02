@@ -1,11 +1,15 @@
 lazy val typeconfig = (project in file("."))
   .settings(
-    scalaVersion := "2.11.8",
-    version := "1.0.0",
+    scalaVersion := "2.12.2",
+    version := "1.0.1",
     libraryDependencies ++= Seq(
-      "com.typesafe.play" %% "play-json" % "2.5.15",
+      "com.github.kondaurovdev" %% "play_json" % "1.0.0",
       "com.typesafe" % "config" % "1.3.1",
-      "org.specs2" %% "specs2-core" % "3.8.5" % "test"
+      "org.specs2" %% "specs2-core" % "3.9.1" % "test"
+    ),
+    resolvers ++= Seq(
+      Resolver.sonatypeRepo("snapshots"),
+      Resolver.bintrayRepo("kondaurovdev", "maven")
     ),
     organization := "com.github.kondaurovdev",
     publishTo := {
