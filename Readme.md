@@ -8,11 +8,6 @@ This is scala library that depends on typesafe config (https://github.com/typesa
 
 It provides some scala api
 
-## Dependencies
-
- - "com.typesafe" % "config" % "1.3.1"
- - "com.typesafe.play" %% "play-json" % "2.5.15"
-
 ## Installation
 
 1. Add resolver
