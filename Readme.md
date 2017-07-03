@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/kondaurov-scala/typeconfig.svg?branch=master)](https://travis-ci.org/kondaurov-scala/typeconfig)
+[ ![Download](https://api.bintray.com/packages/kondaurovdev/maven/typeconfig/images/download.svg) ](https://bintray.com/kondaurovdev/maven/typeconfig/_latestVersion)
 
 ## Typeconfig
 
@@ -7,11 +8,6 @@ Typesafe config is library that's used by akka, play, and other libraries.
 This is scala library that depends on typesafe config (https://github.com/typesafehub/config)
 
 It provides some scala api
-
-## Dependencies
-
- - "com.typesafe" % "config" % "1.3.1"
- - "com.typesafe.play" %% "play-json" % "2.5.15"
 
 ## Installation
 
