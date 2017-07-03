@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/kondaurov-scala/typeconfig.svg?branch=master)](https://travis-ci.org/kondaurov-scala/typeconfig)
+[![Build Status](https://travis-ci.org/kondaurov-scala/typeconfig.svg?branch=1.0.0)](https://travis-ci.org/kondaurov-scala/typeconfig)
+[ ![Download](https://api.bintray.com/packages/kondaurovdev/maven/typeconfig/images/download.svg?version=1.0.0) ](https://bintray.com/kondaurovdev/maven/typeconfig/1.0.0/link)
 
 ## Typeconfig
 

@@ -16,7 +16,8 @@ lazy val typeconfig = (project in file("."))
       }
     },
     bintrayRepository := "maven",
-    publishArtifact in (Compile, packageDoc) := false,
+    publishArtifact in (Compile, packageDoc) := !isSnapshot.value,
+    publishArtifact in (Test, packageDoc) := false,
     bintrayReleaseOnPublish := !isSnapshot.value,
     licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
     credentials ++= Seq(
@@ -27,8 +28,9 @@ lazy val typeconfig = (project in file("."))
     pomExtra :=
       <url>https://github.com/kondaurov-scala/typeconfig</url>
         <scm>
-          <url>git@github.com:kondaurov-scala/typeconfig.git</url>re
-          <connection>scm:git:git@github.com:kondaurov-json/typeconfig.git</connection>
+          <url>https://github.com/kondaurov-scala/typeconfig.git</url>
+          <connection>https://github.com/kondaurov-scala/typeconfig.git</connection>
+          <tag>1.0.0</tag>
         </scm>
         <developers>
           <developer>
