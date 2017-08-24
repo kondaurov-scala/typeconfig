@@ -1,9 +1,9 @@
 lazy val typeconfig = (project in file("."))
   .settings(
     scalaVersion := "2.12.2",
-    version := "1.0.1",
+    version := "1.1.0-SNAPSHOT",
     libraryDependencies ++= Seq(
-      "com.github.kondaurovdev" %% "play_json" % "1.0.0",
+      "com.github.kondaurovdev" %% "play_json" % "1.1.0",
       "com.typesafe" % "config" % "1.3.1",
       "org.specs2" %% "specs2-core" % "3.9.1" % "test"
     ),
@@ -33,7 +33,7 @@ lazy val typeconfig = (project in file("."))
         <scm>
           <url>https://github.com/kondaurov-scala/typeconfig.git</url>
           <connection>https://github.com/kondaurov-scala/typeconfig.git</connection>
-          <tag>1.0.0</tag>
+          <tag>1.1.0-SNAPSHOT</tag>
         </scm>
         <developers>
           <developer>
