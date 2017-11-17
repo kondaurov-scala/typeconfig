@@ -1,10 +1,10 @@
-package com.github.kondaurovdev.typeconfig.wrapper
+package com.github.kondaurovdev.typeconfig.helper.config
 
 import com.github.kondaurovdev.typeconfig.Helper
-import com.typesafe.config.{Config, ConfigRenderOptions}
-import play.api.libs.json.{JsValue, Json, Reads}
+import com.typesafe.config.{ Config, ConfigRenderOptions }
+import play.api.libs.json.{ JsValue, Json, Reads }
 
-trait iConfigWrapper {
+trait RichConfig {
 
   def config: Config
 
@@ -38,4 +38,4 @@ trait iConfigWrapper {
 
 }
 
-class ConfigWrapper(val config: Config) extends iConfigWrapper
+class ConfigWrapper(val config: Config) extends RichConfig

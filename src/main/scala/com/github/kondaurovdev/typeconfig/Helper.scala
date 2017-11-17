@@ -1,6 +1,7 @@
 package com.github.kondaurovdev.typeconfig
 
-import com.github.kondaurovdev.play_json.helper.{TryHelper, ValidateHelper}
+import com.github.kondaurovdev.play_json.helper.{ TryHelper, ValidateHelper }
+import com.github.kondaurovdev.typeconfig.helper.config.ConfigWrapper
 import com.typesafe.config.Config
 
 object Helper {
@@ -11,7 +12,7 @@ object Helper {
 
   object Implicits {
 
-    implicit class ConfigWrapper(config: Config) extends wrapper.ConfigWrapper(config)
+    implicit class ConfigWrapper(config: Config) extends ConfigWrapper(config)
 
   }
 
